@@ -1,0 +1,22 @@
+<section id="stories" class="py-24 px-6 bg-[#0F1A4D]">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-[#78DAB8] mb-12 text-center">Success Stories</h2>
+      <div class="testimonials-container  relative w-full overflow-hidden">
+        <div class="testimonials-track flex gap-8 w-[calc(600px*3+2rem*2)] md:w-auto">
+          <div *ngFor="let t of testimonials" 
+               class="testimonial-card shrink-0 w-[85vw] md:w-[600px] bg-[#0F1A4D] p-8 rounded-2xl border border-[#78DAB8]/20">
+            <p class="text-white/80 mb-4">"{{ t.quote }}"</p>
+            <div class="flex items-center gap-4 cursor-pointer">
+              <div class="w-12 h-12 rounded-full bg-[#78DAB8]/20 flex items-center justify-center text-[#78DAB8]">
+                {{ t.initials }}
+              </div>
+              <div>
+                <p class="text-white font-medium ">{{ t.name }}</p>
+                <p class="text-[#78DAB8] text-sm">{{ t.location }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

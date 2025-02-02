@@ -1,0 +1,21 @@
+/* why-australia.component.css */
+.gradient-mesh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      radial-gradient(circle at 20% 20%, #45BA8940 0%, transparent 40%),
+      radial-gradient(circle at 80% 80%, #0F1A4D 0%, transparent 40%);
+    filter: blur(100px);
+    z-index: 0;
+  }
+  
+  .feature-card {
+    transition: transform 0.3s ease-out;
+  }
+  
+  .card-content {
+    backdrop-filter: blur(10px);
+  }

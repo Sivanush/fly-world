@@ -1,0 +1,39 @@
+<div class="lg:hidden  fixed w-full p-4 z-50 backdrop-blur-lg border-b border-[#78DAB8]/20">
+    <div class="flex justify-between items-center">
+      <div class="text-xl font-bold text-[#78DAB8]">Fly World</div>
+      <div (click)="showMobileMenu.set(!showMobileMenu())" class="text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
+    </div>
+    <div *ngIf="showMobileMenu()" class="mt-4 space-y-4 transition-all duration-300">
+      <a (click)="scrollToSection('pathways')"
+        class="block text-white/80 hover:text-[#78DAB8] cursor-pointer transition-colors duration-300">Pathways</a>
+      <a class="block text-white/80 hover:text-[#78DAB8] cursor-pointer transition-colors duration-300">Success
+        Stories</a>
+      <button
+        class="w-full bg-[#78DAB8] text-[#0F1A4D] px-4 py-2 rounded-full cursor-pointer border-0 transition-all duration-300">
+        Free Assessment
+      </button>
+    </div>
+  </div>
+
+  <nav class="hidden lg:flex fixed w-full p-6 z-50 backdrop-blur-lg border-b border-[#78DAB8]/20">
+    <div class="flex justify-between items-center max-w-7xl mx-auto w-full">
+      <img src="assets/logo.png" alt="Logo" class="w-36">
+
+      <div class="flex items-center gap-8">
+        <a (click)="scrollToSection('pathways')"
+          class="text-white/80 hover:text-[#78DAB8] transition-colors cursor-pointer">Pathways</a>
+        <a (click)="scrollToSection('journey')"
+        class="text-white/80 hover:text-[#78DAB8] transition-colors cursor-pointer">Journey</a>
+        <a (click)="scrollToSection('stories')" 
+        class="text-white/80 hover:text-[#78DAB8] transition-colors cursor-pointer">Stories</a>
+        <button
+          class="bg-[#78DAB8] hover:shadow-[#78DAB8]/30 text-[#0F1A4D] px-6 py-2 rounded-full border-0 hover:scale-105 transition-transform cursor-pointer">
+          Free Assessment
+        </button>
+      </div>
+    </div>
+  </nav>
