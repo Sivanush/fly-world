@@ -1,6 +1,8 @@
 <div class="lg:hidden  fixed w-full p-4 z-50 backdrop-blur-lg border-b border-[#78DAB8]/20">
     <div class="flex justify-between items-center">
-      <div class="text-xl font-bold text-[#78DAB8]">Fly World</div>
+      <!-- <div class="text-xl font-bold text-[#78DAB8]">Fly World</div> -->
+      <img src="assets/logo.png" alt="Logo" class="w-32 cursor-pointer" (click)="scrollToSection('hero')">
+       
       <div (click)="showMobileMenu.set(!showMobileMenu())" class="text-white">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -10,8 +12,8 @@
     <div *ngIf="showMobileMenu()" class="mt-4 space-y-4 transition-all duration-300">
       <a (click)="scrollToSection('pathways')"
         class="block text-white/80 hover:text-[#78DAB8] cursor-pointer transition-colors duration-300">Pathways</a>
-      <a class="block text-white/80 hover:text-[#78DAB8] cursor-pointer transition-colors duration-300">Success
-        Stories</a>
+      <a (click)="scrollToSection('journey')" class="block text-white/80 hover:text-[#78DAB8] cursor-pointer transition-colors duration-300">Journey</a>
+        <a (click)="scrollToSection('stories')"  class="block text-white/80 hover:text-[#78DAB8] cursor-pointer transition-colors duration-300">Stories</a>
       <button
         class="w-full bg-[#78DAB8] text-[#0F1A4D] px-4 py-2 rounded-full cursor-pointer border-0 transition-all duration-300">
         Free Assessment
@@ -21,7 +23,7 @@
 
   <nav class="hidden lg:flex fixed w-full p-6 z-50 backdrop-blur-lg border-b border-[#78DAB8]/20">
     <div class="flex justify-between items-center max-w-7xl mx-auto w-full">
-      <img src="assets/logo.png" alt="Logo" class="w-36">
+      <img src="assets/logo.png" alt="Logo" class="w-36 cursor-pointer" (click)="scrollToSection('hero')">
 
       <div class="flex items-center gap-8">
         <a (click)="scrollToSection('pathways')"
