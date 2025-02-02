@@ -1,27 +1,43 @@
-# FlyWorld
+# Landing Page Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+This is a visually appealing and responsive landing page project built with Angular 17, Tailwind CSS, Three.js, GSAP, and Globe.gl. The design focuses on a clean, professional look with intuitive navigation and engaging animations, optimized for various devices.
 
-## Development server
+## Technologies Used:
+- **Angular 17**: Frontend framework used for building the landing page.
+- **Tailwind CSS**: Utility-first CSS framework for styling the components.
+- **Three.js**: Used for rendering 3D graphics and interactive elements.
+- **GSAP**: JavaScript library for animations to enhance user experience.
+- **Globe.gl**: For creating interactive globe visualizations.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features:
+- Fully responsive design for desktop, tablet, and mobile views.
+- Interactive 3D globe for engaging user interaction.
+- Smooth animations powered by GSAP for a dynamic user experience.
 
-## Code scaffolding
+## Installation:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To get started with the project, follow these steps:
 
-## Build
+1. Clone the repository:
+    ```bash
+    git clone <repository_url>
+    ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Navigate into the project directory:
+    ```bash
+    cd fly-world
+    ```
 
-## Running unit tests
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Run the application:
+    ```bash
+    ng serve
+    ```
 
-## Running end-to-end tests
+Visit `http://localhost:4200` in your browser to view the landing page.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
